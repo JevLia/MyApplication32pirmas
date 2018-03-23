@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:background="@color/defaultBackgroundColor">
+
+    <TextView
+        android:id="@+id/textViewOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="1dp"
+        android:background="#7ac47f"
+        android:layout_weight="1"
+        android:text="Hello World!"
+        android:textColor="@color/defaultTextColor"
+        android:gravity="center"
+        android:textSize="40sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageViewOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/defaultBackgroundColor2"
+        android:layout_weight="3"
+        android:src="@drawable/default_picture"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonOne"
+            android:text="@string/button_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:src="@drawable/red"
+
+
+            />
+
+        <Button
+            android:id="@+id/buttonTwo"
+            android:text="@string/button_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:src="@drawable/green"
+            />
+
+        <Button
+            android:id="@+id/buttonThree"
+            android:text="@string/button_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:src="@drawable/blue"
+            />
+    </LinearLayout>
+</LinearLayout>
